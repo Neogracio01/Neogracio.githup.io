@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> FORM MONITORING PERLENGKAPAN JALAN </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<style>
+  /*  */
+  body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .container{
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+
+  }
+  .container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  }
+  .container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+  .content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #172046;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+  border-color: #9b59b6;
+  }
+  form .button input{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  
+  @media(max-width: 584px){
+  .container{
+  max-width: 100%;
+  }
+  form .user-details .input-box{
+  margin-bottom: 15px;
+  width: 100%;
+  }
+  form .category{
+  width: 100%;
+  }
+  .content form .user-details{
+  max-height: 300px;
+  overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+  width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+  flex-direction: column;
+  }
+  @media screen and (max-width: 991.98px) {
+  .wrapper{}
+  }
+}
+</style>
+    <body>
+    <div class="container">
+    <div class="img_dishub">
+        <img src="https://dishub.madiunkota.go.id/wp-content/uploads/2022/05/logo-dishub-2023-1-1024x252.png"
+        width="150px" style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px; margin-top: 20px;">
+      </div>
+      <div class="title"style="text-align: center;">FORM MONITORING PERLENGKAPAN JALAN</div>
+    <div class="content">
+    <div class="user-details">
+        <div class="input-box">
+          <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbwmbpOxxH9auMuxk9tZOlcyksOH09UIajR3UeUHeGatW5YYcmMSXvlMUCDhcIEI8HO9/exec" method="POST">
+          <input type="hidden" value="" name="fileContent" id="fileContent">
+          <input type="hidden" value="" name="filename" id="filename">
+          <div class="user-details">
+            <div class="input-box">
+              <label for="TANGGAL BEKERJA" class="form-label">TANGGAL BEKERJA</label>
+                <input type="datetime-local" id="TANGGAL BEKERJA" name="TANGGAL BEKERJA" class="form-control" placeholder="Masukan tanggal bekerja anda" required>
+              </div>
+              <div class="input-box">
+                <label for="NAMA PEGAWAI" class="form-label">NAMA PEGAWAI</label>
+                  <input type="text" id="NAMA PEGAWAI" name="NAMA PEGAWAI" class="form-control" placeholder="Masukan nama lengkap anda" required>
+                </div>
+                <div class="input-box">
+                  <label for="KOORDINAT" class="form-label">KOORDINAT</label>
+                  <input type="text" id="KOORDINAT" name="KOORDINAT" class="form-control" placeholder="Masukan titik Koordinat" required>
+              </div>
+        <div class="input-box">
+            <label for="KERUSAKAN PERLENGKAPAN JALAN" class="form-label">KERUSAKAN PERLENGKAPAN JALAN</label>
+            <input type="text" id="KERUSAKAN PERLENGKAPAN" name="KERUSAKAN PERLENGKAPAN JALAN" class="form-control" placeholder="Masukan Jenis kerusakan" required>
+            </div>
+        <div class="input-box">
+            <label for="NAMA JALAN" class="form-label">NAMA JALAN</label>
+              <input type="text" id="NAMA JALAN" name="NAMA JALAN" class="form-control" placeholder="Masukan nama jalan" required>
+            </div>
+            <div class="input-box">
+              <label for="KECAMATAN/KELURAHAN" class="form-label">KECAMATAN ATAU KELURAHAN</label>
+                <input type="text" id="KECAMATAN/KELURAHAN" name="KECAMATAN/KELURAHAN" class="form-control" placeholder="Masukan kecamatan atau kelurahan" required>
+              </div> 
+        <div class="input-box">
+            <label for="PENANGANAN" class="form-label">PENANGANAN</label>
+              <input type="text" id="PENANGANAN" name="PENANGANAN" class="form-control" placeholder="Penanganan yang anda lakukan" required>
+            </div>
+            </form>
+        <div class="input-box">
+            <label for="file" class="form-label"> GAMBAR KERUSAKAN</label>
+            <input required id="attach" name="attach" type="file"/>
+            </div>
+        <div class="button"style="width: 100%;">
+            <input type="button" value="KIRIM DATA" onclick="UploadFile();" />
+            </div>
+            <div>
+        <a href="https://docs.google.com/spreadsheets/d/1ua3A0Xn9VqlSkQ-YsHNaIHm4qF_LIcG5z4CZ_OiIx8A/edit?gid=0#gid=0" class="btn btn-primary"target="_blank">VIEW DATA</a>
+       <button class="btn btn-danger" type="reset">RESET FORM</button>
+           </div>
+    <script>
+    function UploadFile() {
+    var reader = new FileReader();
+    var file = document.getElementById('attach').files[0];
+    reader.onload = function(){
+    document.getElementById('fileContent').value=reader.result;
+    document.getElementById('filename').value=file.name;
+    document.getElementById('uploadForm').submit();
+    }
+    reader.readAsDataURL(file);
+    }
+    </script>
+</body>
+</html>
